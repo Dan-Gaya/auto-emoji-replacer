@@ -1,0 +1,12 @@
+{
+    "name": "Auto-Emoji Replacer",
+    "type": "modifier",
+    "description": "Automatically replaces specific words in messages with emojis.",
+    "author": "Your Name",
+    "version": "1.0.0",
+    "config": {
+      "trigger": "message_received",
+      "action": "modify_message"
+    }
+  }
+  
