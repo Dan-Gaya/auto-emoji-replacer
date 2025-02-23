@@ -15,9 +15,9 @@ exports.appendEmojis = (text)=> {
 
 // API Handler for Telex GET Request
 exports.processMessage = (req, res, next) => {
-      const { channel_id, message } = req.body;
+      const { message } = req.body;
 
-    if (!channel_id || !message) {
+    if (!message) {
         return res.status(400).json({error: "Missing required fields: channel_id and message" });
     }
 
