@@ -5,8 +5,11 @@ const { appendEmojis } = require('../src/controllers/messageController'); // Imp
 
 describe('Emoji API Tests', () => {
     // ✅ Test case for API endpoint response
-    test('GET /api/process-message should append emojis correctly', async () => {
-        const response = await request(app).get('/api/process-message?text=I am happy and cool');
+     test('POST /api/process-message should append emojis correctly', async () => {
+        const response = await request(app)
+            .post('/api/process-message')
+            .send({ text: "I am happy and cool" })
+            .set('Content-Type', 'application/json');
 
         expect(response.status).toBe(200);
         expect(response.body).toHaveProperty('original', "I am happy and cool");
