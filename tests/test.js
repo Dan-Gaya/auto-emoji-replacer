@@ -8,12 +8,11 @@ describe('Emoji API Tests', () => {
      test('POST /api/process-message should append emojis correctly', async () => {
         const response = await request(app)
             .post('/api/process-message')
-            .send({ text: "I am happy and cool" })
+            .send({ message: "I am happy and cool" })
             .set('Content-Type', 'application/json');
 
-        expect(response.status).toBe(200);
-        expect(response.body).toHaveProperty('original', "I am happy and cool");
-        expect(response.body).toHaveProperty('modified', `I am happy ${emojiDatabase.happy} and cool ${emojiDatabase.cool}`);
+        expect(response.status).toBe(200);   
+        expect(response.body).toHaveProperty('message', `I am happy ${emojiDatabase.happy} and cool ${emojiDatabase.cool}`);
     });
 
     // ✅ Test case for unknown words (No modification)

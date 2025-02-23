@@ -8,7 +8,7 @@ module.exports= {
         "app_description": "This integration automatically apend certain words in chat messages with corresponding emojis. It enhances communication by making messages more expressive and fun.",
         "app_logo": "https://iili.io/XMBfse.png",
         "app_name": "Auto-Emoji Appender.",
-        "app_url": "https://1kxd87rc-5000.uks1.devtunnels.ms",
+        "app_url": "https://auto-emoji-replacer.onrender.com",
         "background_color": "#HEXCODE"
       },
       "integration_category": "Communication & Collaboration",
@@ -50,7 +50,7 @@ module.exports= {
         },
     
       ],
-      "target_url": "https://1kxd87rc-5000.uks1.devtunnels.ms/api/process-message"
+      "target_url": "https://auto-emoji-replacer.onrender.com/api/process-message"
     }
   }
   
