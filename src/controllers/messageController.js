@@ -18,7 +18,7 @@ exports.processMessage = (req, res, next) => {
       const { message } = req.body;
 
     if (!message) {
-        return res.status(400).json({error: "Missing required fields: channel_id and message" });
+        return res.status(400).json({error: "Missing required fields: message" });
     }
 
     const modifiedMessage = exports.appendEmojis(message);
