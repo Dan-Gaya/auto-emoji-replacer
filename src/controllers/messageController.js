@@ -2,7 +2,7 @@ const emojiDatabase = require('../models/emojiModel');
 
 // Function to append emojis instead of replacing words
 exports.appendEmojis = (text)=> {
-   // if (typeof text !== 'string') return text;
+   if (typeof text !== 'string') return text;
 
     let words = text.split(" ");
     let modifiedWords = words.map(word => {
