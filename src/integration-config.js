@@ -44,7 +44,7 @@ module.exports= {
     ],
       endpoints: [
         {
-          path: "/api/process-message",
+          path: "/process-message",
           method: "POST",
           description: "Receives messages  responses",
         },
