@@ -38,7 +38,7 @@ module.exports= {
         "label": "messageLimit",
         "type": "number",
         "description": "Maximum number of recent messages to use as context (default: 50)",
-        "default": 50,
+        "default": 500,
         "required": false
         }
     ],
